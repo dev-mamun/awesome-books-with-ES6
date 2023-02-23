@@ -75,7 +75,7 @@ Once you have git installed on your machine you can clone project by running the
 To clone your project to your local machine
 
 ```sh
-  git clone git@github.com:dev-mamun/Awesome-books.git
+  git clone git@github.com:dev-mamun/awesome-books-with-ES6.git
 ```
 
 Alternatively, you can download the zip file of your project by clicking on the `Code` button on the right side of your
@@ -86,7 +86,7 @@ project page and clicking on `Download ZIP`
 Install this project with:
 
 ```sh
-  cd Awesome-books
+  cd awesome-books-with-ES6
 ```
 
 For this project, you don't need to install any dependencies but if you prefer to install any dev dependencies run:

@@ -7,24 +7,60 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description"
-            content="I am Abdullah al mamun, A full-stack developer. Who can build both the front end and the back end of a website.">
-        <meta name="keywords" content="HTML, CSS, JavaScript, Ruby, Ruby on Rails, Full-Stack">
-        <meta name="author" content="Abdullah al mamun">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-        <link rel="stylesheet" href="index.css">
-        <title>Awesome Books</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+          content="I am Abdullah al mamun, A full-stack developer. Who can build both the front end and the back end of a website.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Ruby, Ruby on Rails, Full-Stack">
+    <meta name="author" content="Abdullah al mamun">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="index.css">
+    <title>Awesome Books</title>
 
-    </head>
+</head>
 
-    <body>
+<body>
+<main>
+    <header>
+        <nav class="nav-bar">
+            <a href="index.html" class="nav-branding" title="Awesome Books" rel="noopener noreferrer">Awesome Books</a>
+            <ul class="menu">
+                <li><a id="list" class="nav-menu" href="#showlist">List</a></li>
+                <li><a id="add" class="nav-menu" href="#addnew">Add New</a></li>
+                <li><a id="contact" class="nav-menu" href="#contactus">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="time">
+            <time></time>
+        </div>
+    </header>
+    <h1 id="heading">All awesome books</h1>
+    <section id="books"></section>
+    <section id="book-frm" class="hidden">
+        <form action="#">
+            <div class="addnewbook">
+                <input type="text" placeholder="Title" id="title" value="" minlength="3" maxlength="50" required/>
+                <input type="text" placeholder="Author" id="author" value="" minlength="3" maxlength="50" required/>
+                <button type="submit" id="addbook" class="btn-default">Add</button>
+            </div>
+        </form>
+    </section>
+    <section id="contacts" class="contacts hidden">
+        <h3>Do you have any questions or you just want to say "Hello!!" ?</h3>
+        <h4>you can reach out to us!</h4>
+        <ul>
+            <li>e-mail: mamun1214@gmail.com</li>
+            <li>Phone number: +8801911730705</li>
+            <li>Address: Dhaka, Bangladesh</li>
+        </ul>
+    </section>
+    <footer> Copyright &nbsp<i class="fa-regular fa-copyright"></i>&nbsp All rights reserved 2023</footer>
+</main>
 
-        <script src="https://kit.fontawesome.com/cddc9bcff3.js" crossorigin="anonymous"></script>
-        <script src="index.js"></script>
-    </body>
+<script src="https://kit.fontawesome.com/cddc9bcff3.js" crossorigin="anonymous"></script>
+<script src="index.js" type="module"></script>
+</body>
 
-    </html>
+</html>

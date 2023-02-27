@@ -1,0 +1,66 @@
+/**
+ * Project: Awesome-books
+ * File: nav.css
+ * Created: 2/20/23
+ * Author: Abdullah Al Mamun <mamun1214@gmail.com>
+ */
+
+header {
+  margin-top: 10px;
+  width: inherit;
+  min-height: 50px;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid grey;
+}
+
+.nav-branding {
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  justify-content: flex-start;
+}
+
+.menu li {
+  display: inline;
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #f4f4f48a;
+}
+
+.active {
+  background-color: #04aa6d;
+}
+
+#time {
+  width: 100%;
+  height: 20px;
+  text-align: right;
+}

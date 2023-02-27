@@ -4,7 +4,7 @@ import {DateTime} from "./node_modules/luxon/src/luxon.js";
 
 document.onreadystatechange = () => {
   if (document.readyState === 'complete') {
-    const notify = new Notification();
+    const notify = new Notification;
     const library = new Library(notify);
 
     const title = document.querySelector('#title');

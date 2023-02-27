@@ -1,17 +1,17 @@
-/******************************************
+/** ****************************************
  *  Project : Awesome-books-ES6
  *  Author : Abdullah Al Mamun <mamun1214@gmail.com>
  *  Created On : Thu Feb 23 2023
  *  File : library.js
- *******************************************/
+ ****************************************** */
 export default class Library {
   constructor($notify) {
     this.books = [];
     this.menuLink();
-    this._notify = $notify;
+    this.notify = $notify;
   }
 
-  menuLink() {
+  menuLink = () => {
     const menu = document.querySelectorAll('.nav-menu');
     const listBtn = document.getElementById('books');
     const addBtn = document.getElementById('book-frm');
@@ -24,15 +24,15 @@ export default class Library {
         contactBtn.classList.add('hidden');
         switch (e.target.id) {
           case 'list':
-            heading.textContent = "All awesome books";
+            heading.textContent = 'All awesome books';
             listBtn.classList.remove('hidden');
             break;
           case 'add':
-            heading.textContent = "Add a new book";
+            heading.textContent = 'Add a new book';
             addBtn.classList.remove('hidden');
             break;
           case 'contact':
-            heading.textContent = "Contact information";
+            heading.textContent = 'Contact information';
             contactBtn.classList.remove('hidden');
             break;
           default:
@@ -40,24 +40,22 @@ export default class Library {
         }
       });
     });
-  }
+  };
 
-  addBook(title, author) {
+  addBook = (title, author) => {
     const book = {
       title,
       author,
     };
     this.books.push(book);
     localStorage.setItem('books', JSON.stringify(this.books));
-  }
+  };
 
-  removeBook(title, author) {
-    this.books = this.books.filter(
-        (item) => item.title !== title || item.author !== author,
-    );
-  }
+  removeBook = (title, author) => {
+    this.books = this.books.filter((item) => item.title !== title || item.author !== author);
+  };
 
-  createItem(book) {
+  createItem = (book) => {
     const div = document.createElement('article');
     div.className = '';
     div.innerHTML = `<div>"${book.title}" by ${book.author}</div>
@@ -68,8 +66,8 @@ export default class Library {
       this.removeBook(book.title, book.author);
       div.remove();
       localStorage.setItem('books', JSON.stringify(this.books));
-      this._notify.show('Book has been deleted successfully','error');
+      this.notify.show('Book has been deleted successfully', 'error');
     });
     return div;
-  }
+  };
 }

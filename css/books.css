@@ -1,0 +1,131 @@
+/**
+ * Project: Awesome-books
+ * File: books.css
+ * Created: 2/20/23
+ * Author: Abdullah Al Mamun <mamun1214@gmail.com>
+ */
+.addnewbook {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: flex-end;
+  gap: 13px;
+}
+
+.books {
+  display: flex;
+  flex-direction: column;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+
+.alert-error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+main {
+  width: 768px;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+footer {
+  width: 100%;
+  min-height: 50px;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  justify-content: center;
+}
+
+#book-list {
+  width: 100%;
+  min-height: 350px;
+  margin: 10px 0;
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+}
+
+article {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+section {
+  width: 100%;
+  border: 1px solid black;
+  margin: auto;
+  padding: 10px;
+}
+
+article:nth-child(odd) {
+  background: white;
+  border: 1px solid #ddd;
+}
+
+article:nth-child(even) {
+  background: #ddd;
+  border: 1px solid #ddd;
+}
+
+.contacts {
+  text-align: left;
+  display: grid;
+  gap: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contacts ul {
+  list-style-type: circle;
+  padding: 5px;
+}
+
+.contacts ul li {
+  padding: 5px;
+}
+
+#books {
+  min-height: 250px;
+  margin-bottom: 20px;
+}

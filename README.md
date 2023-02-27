@@ -124,7 +124,7 @@ project.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Add Notification pop up
+- Notification pop up
 
 
 <!-- CONTRIBUTING -->
